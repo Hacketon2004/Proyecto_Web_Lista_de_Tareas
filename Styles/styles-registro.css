@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(33, 33,33);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    color: white;
+    background: rgb(23, 23, 23);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+    height: 600px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 60px;
+    font-family: cursive;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 65px; /* Ajuste para que no toque el borde */
+    font-size: 18px;
+    color: #ccc;
+}
+
+.input-container input {
+    font-size: 15px;
+    color: white;
+    width: 70%;
+    padding: 15px 15px 15px 50px; /* Más padding a la izquierda para el ícono */
+    margin-bottom: 0; /* Se maneja con el .input-container */
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    background-color: rgb(23, 23, 23);
+    outline: none;
+}
+
+/* Para mejorar la apariencia cuando se enfoca el input */
+.input-container input:focus {
+    border-color: #fff;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    background: #252525;
+    color: white;
+    border: none;
+    padding: 10px;
+    width:80%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background: #2a2a2a;
+}
+
+a {
+    display: block;
+    margin: 0 0 20px 0;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Animación al hacer clic */
+a#ingresar {
+    transition: opacity 0.5s ease-out;
+}
+
+a#ingresar:active {
+    opacity: 0;
+}
+
+.ingresar{
+    justify-content: center;
+    display: flex;
+}
